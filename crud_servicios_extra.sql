@@ -1,8 +1,6 @@
 ---------------------------------------------
 -- Procedimiento Crear servicio extra
 ---------------------------------------------
-
---FALTA AGREGAR EL BUSCAR
 CREATE OR REPLACE PROCEDURE SP_CREAR_SERVICIO_EXTRA 
 (P_ID IN OUT NUMBER, P_DESCRIPCION IN VARCHAR2) AS
 V_ID_SALIDA NUMBER;
@@ -21,7 +19,6 @@ END SP_CREAR_SERVICIO_EXTRA;
 ---------------------------------------------
 -- Procedimiento Buscar servicio extra
 ---------------------------------------------
---cambiar p_id por un inout
 CREATE OR REPLACE PROCEDURE SP_BUSCAR_SERVICIO_EXTRA 
 (P_ID IN NUMBER, P_ID_SALIDA OUT NUMBER, P_DESCRIPCION_SALIDA OUT VARCHAR2) IS
 
@@ -41,7 +38,7 @@ END SP_BUSCAR_SERVICIO_EXTRA;
 ---------------------------------------------
 -- Procedimiento Eliminar servicio extra
 ---------------------------------------------
-CREATE OR REPLACE PROCEDURE SP_ELIMINAR_SERVICIO_EXTRA 
+CREATE OR REPLACE PROCEDURE SP_MODIFICAR_SERVICIO_EXTRA 
   (P_ID IN OUT NUMBER) AS
   V_ID_SALIDA NUMBER;
   V_DESCRIPCION VARCHAR2(20);
@@ -54,7 +51,7 @@ BEGIN
   END IF;
   COMMIT; -- PARA GUARDAR CAMBIOS
   P_ID := V_ID_SALIDA; -- 0 o el id que se encontró
-END SP_ELIMINAR_SERVICIO_EXTRA;
+END SP_MODIFICAR_SERVICIO_EXTRA;
 
 
 ---------------------------------------------
