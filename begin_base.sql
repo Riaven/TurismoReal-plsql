@@ -1,3 +1,5 @@
+--Bloque plsql para realizar pruebas
+
 SET SERVEROUTPUT ON;
 
 DECLARE
