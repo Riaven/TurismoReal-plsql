@@ -1,0 +1,190 @@
+---------------------------------------------
+-- Procedimiento Buscar Departamentos
+---------------------------------------------
+CREATE OR REPLACE PROCEDURE SP_BUSCAR_POTENTE_DEPARTAMENTO 
+(P_ID IN NUMBER,
+P_ID_SALIDA OUT NUMBER; 
+P_DIRECCION OUT VARCHAR2,
+P_NUMERO OUT NUMBER,
+P_PRECIO OUT NUMBER,
+P_M_CUADRADOS OUT VARCHAR2,
+P_BANIOS OUT NUMBER,
+P_DESCRIPCION OUT VARCHAR2,
+P_CANTIDAD_HABITACION OUT NUMBER,
+P_ID_ESTADO OUT NUMBER,
+P_ID_REGION OUT NUMBER,
+P_ID_COMUNA OUT NUMBER,
+P_ID_INVENTARIO OUT NUMBER,
+P_ID_FUNCIONARIO OUT NUMBER,
+P_ID_SERVICIOS_EXTRA OUT NUMBER) IS
+
+BEGIN
+  SELECT ID_DEPARTAMENTO,
+         DIRECCION,
+         NUMERO,
+         PRECIO,
+         M_CUADRADOS,
+         BANIOS,
+         DESCRIPCION,
+         CANTIDAD_HABITACION,
+         ID_ESTADO,
+         ID_REGION,
+         ID_COMUNA,
+         ID_INVENTARIO,
+         ID_FUNCIONARIO,
+         ID_SERVICIOS_EXTRA
+  INTO
+         P_ID_SALIDA, 
+         P_DIRECCION,
+         P_NUMERO,
+         P_PRECIO,
+         P_M_CUADRADOS,
+         P_BANIOS,
+         P_DESCRIPCION,
+         P_CANTIDAD_HABITACION,
+         P_ID_ESTADO,
+         P_ID_REGION,
+         P_ID_COMUNA,
+         P_ID_INVENTARIO,
+         P_ID_FUNCIONARIO,
+         P_ID_SERVICIOS_EXTRA
+  FROM DEPARTAMENTO
+  WHERE ID_DEPARTAMENTO = P_ID;
+  EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+         P_ID_SALIDA := 0; 
+         P_DIRECCION := 'NONE';
+         P_NUMERO := 'NONE';
+         P_PRECIO := 'NONE';
+         P_M_CUADRADOS := 'NONE';
+         P_BANIOS := 'NONE';
+         P_DESCRIPCION := 'NONE';
+         P_CANTIDAD_HABITACION := 'NONE';
+         P_ID_ESTADO := 'NONE';
+         P_ID_REGION := 'NONE';
+         P_ID_COMUNA := 'NONE';
+         P_ID_INVENTARIO := 'NONE';
+         P_ID_FUNCIONARIO := 'NONE';
+         P_ID_SERVICIOS_EXTRA := 'NONE';
+END SP_BUSCAR_DEPARTAMENTO;
+
+---------------------------------------------
+-- Procedimiento Buscar Departamentos
+---------------------------------------------
+CREATE OR REPLACE PROCEDURE SP_BUSCAR_DEPARTAMENTO 
+(P_ID IN NUMBER,
+P_ID_SALIDA OUT NUMBER) IS
+BEGIN
+  SELECT ID_DEPARTAMENTO,    
+  INTO
+         P_ID_SALIDA,    
+  FROM DEPARTAMENTO
+  WHERE ID_DEPARTAMENTO = P_ID;
+  EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+         P_ID_SALIDA := 0; 
+END SP_BUSCAR_DEPARTAMENTO;
+
+---------------------------------------------
+-- Procedimiento Crear Departamentos
+---------------------------------------------
+CREATE OR REPLACE PROCEDURE SP_CREAR_DEPARTAMENTO 
+(P_ID IN OUT NUMBER,
+P_DIRECCION IN VARCHAR2,
+P_NUMERO IN NUMBER,
+P_PRECIO IN NUMBER,
+P_M_CUADRADOS IN VARCHAR2,
+P_BANIOS IN NUMBER,
+P_DESCRIPCION IN VARCHAR2,
+P_CANTIDAD_HABITACION IN NUMBER,
+P_ID_ESTADO IN NUMBER,
+P_ID_REGION IN NUMBER,
+P_ID_COMUNA IN NUMBER,
+P_ID_INVENTARIO IN NUMBER,
+P_ID_FUNCIONARIO IN NUMBER,
+P_ID_SERVICIOS_EXTRA IN NUMBER
+) AS
+V_ID_SALIDA NUMBER;
+BEGIN
+  V_ID_SALIDA := 0;
+  SP_BUSCAR_DEPARTAMENTO(P_ID, V_ID_SALIDA);
+  IF V_ID_SALIDA == 0 THEN
+    INSERT INTO SERVICIOS_EXTRA VALUES (P_ID,P_DIRECCION,
+                                        P_NUMERO,
+                                        P_PRECIO,
+                                        P_M_CUADRADOS,
+                                        P_BANIOS,
+                                        P_DESCRIPCION,
+                                        P_CANTIDAD_HABITACION,
+                                        P_ID_ESTADO,
+                                        P_ID_REGION,
+                                        P_ID_COMUNA,
+                                        P_ID_INVENTARIO,
+                                        P_ID_FUNCIONARIO,
+                                        P_ID_SERVICIOS_EXTRA);
+    COMMIT; -- PARA GUARDAR CAMBIOS
+  END IF
+  P_ID := V_ID_SALIDA;
+END SP_CREAR_DEPARTAMENTO;
+
+
+---------------------------------------------
+-- Procedimiento Modificar Departamentos
+---------------------------------------------
+CREATE OR REPLACE PROCEDURE SP_MODIFICAR_DEPARTAMENTO 
+  (P_ID IN OUT NUMBER,
+P_DIRECCION IN VARCHAR2,
+P_NUMERO IN NUMBER,
+P_PRECIO IN NUMBER,
+P_M_CUADRADOS IN VARCHAR2,
+P_BANIOS IN NUMBER,
+P_DESCRIPCION IN VARCHAR2,
+P_CANTIDAD_HABITACION IN NUMBER,
+P_ID_ESTADO IN NUMBER,
+P_ID_REGION IN NUMBER,
+P_ID_COMUNA IN NUMBER,
+P_ID_INVENTARIO IN NUMBER,
+P_ID_FUNCIONARIO IN NUMBER,
+P_ID_SERVICIOS_EXTRA IN NUMBER) AS
+  V_ID_SALIDA NUMBER;
+BEGIN
+  V_ID_SALIDA := 0;
+  SP_BUSCAR_DEPARTAMENTO(P_ID, V_ID_SALIDA);
+  IF V_ID_SALIDA != 0 THEN
+    UPDATE SERVICIOS_EXTRA
+    SET 
+         DIRECCION = P_DIRECCION,
+         NUMERO = P_NUMERO,
+         PRECIO = P_PRECIO,
+         M_CUADRADOS = P_M_CUADRADOS,
+         BANIOS = P_BANIOS,
+         DESCRIPCION = P_DESCRIPCION,
+         CANTIDAD_HABITACION = P_CANTIDAD_HABITACION,
+         ID_ESTADO = P_ID_ESTADO,
+         ID_REGION = P_ID_REGION,
+         ID_COMUNA = P_ID_COMUNA,
+         ID_INVENTARIO = P_ID_INVENTARIO,
+         ID_FUNCIONARIO = P_ID_FUNCIONARIO,
+         ID_SERVICIOS_EXTRA = P_ID_SERVICIOS_EXTRA
+    WHERE ID_DEPARTAMENTO = P_ID;
+  END IF;
+  COMMIT; -- PARA GUARDAR CAMBIOS
+  P_ID := V_ID_SALIDA; -- 0 o el id que se encontró
+END SP_MODIFICAR_DEPARTAMENTO;
+
+
+---------------------------------------------
+-- Procedimiento Eliminar Departamentos
+---------------------------------------------
+CREATE OR REPLACE PROCEDURE SP_ELIMINAR_DEPARTAMENTO 
+  (P_ID IN OUT NUMBER) AS
+  V_ID_SALIDA NUMBER;
+BEGIN
+  V_ID_SALIDA := 0;
+  SP_BUSCAR_DEPARTAMENTO(P_ID, V_ID_SALIDA);
+  IF V_ID_SALIDA != 0 THEN
+    DELETE FROM DEPARTAMENTO WHERE ID_DEPARTAMENTO = P_ID;
+  END IF;
+  COMMIT; -- PARA GUARDAR CAMBIOS
+  P_ID := V_ID_SALIDA; -- 0 o el id que se encontró
+END SP_ELIMINAR_DEPARTAMENTO;
