@@ -1,5 +1,6 @@
 ---------------------------------------------
--- Procedimiento Buscar Departamentos
+-- Procedimiento Buscar Departamentos Potente
+-- ¡NO USAR!
 ---------------------------------------------
 CREATE OR REPLACE PROCEDURE SP_BUSCAR_POTENTE_DEPARTAMENTO 
 (P_ID IN NUMBER,

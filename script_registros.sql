@@ -160,7 +160,7 @@ INSERT INTO EMPLEADO  VALUES (100,'5046128-9','Reece','Bright','Snyder','22/11/2
 
 
 -----------------------------------------
--- Registros Estado_Departamento
+-- Registros Departamento
 -----------------------------------------
 INSERT INTO DEPARTAMENTO VALUES (1,'Apartado núm.: 967, 3598 Sit Carretera',137,'55000','55',1,'AÑADIR DESCRIPCION',2,3,2,1,'888888',15,2);
 INSERT INTO DEPARTAMENTO VALUES (2,'Apdo.:427-4240 Euismod Avda.',40,'55000','70',2,'AÑADIR DESCRIPCION',1,2,4,2,'888888',14,4);
@@ -262,3 +262,107 @@ INSERT INTO DEPARTAMENTO VALUES (97,'Apartado núm.: 649, 4997 A, C.',41,'30000'
 INSERT INTO DEPARTAMENTO VALUES (98,'Apartado núm.: 293, 8832 Velit. Av.',143,'25000','70',1,'AÑADIR DESCRIPCION',2,3,2,2,'888888',6,4);
 INSERT INTO DEPARTAMENTO VALUES (99,'Apartado núm.: 742, 6479 Auctor Carretera',134,'60000','34',2,'AÑADIR DESCRIPCION',1,1,2,4,'888888',9,1);
 INSERT INTO DEPARTAMENTO VALUES (100,'Apdo.:176-3218 Nunc C.',119,'55000','55',1,'AÑADIR DESCRIPCION',2,2,3,3,'888888',5,1);
+
+-----------------------------------------
+-- Registros Cliente
+-----------------------------------------
+INSERT INTO CLIENTE VALUES (1,'42056727-8','Oliver','Shaffer','Dickerson','531-8594 Mauris ','(808) 963-3712','04/04/1991','convallis.in.cursus@tellus.ca','1',4,3,9);
+INSERT INTO CLIENTE VALUES (2,'49668170-3','Baxter','Curry','Duncan','4149 Cras Av.','(450) 306-3925','28/06/1983','taciti.sociosqu@Loremipsum.edu','1',1,2,7);
+INSERT INTO CLIENTE VALUES (3,'47312287-1','Gray','Foster','Sykes','Apartado núm.: 904, 2964 Pede. Avenida','(350) 505-0470','28/04/1982','sit@Ut.co.uk','0',4,2,7);
+INSERT INTO CLIENTE VALUES (4,'46722910-9','Savannah','Frederick','Ayers','Apdo.:204-8477 Ridiculus C.','(852) 339-1895','06/02/1978','erat.eget.ipsum@vitae.com','1',1,1,3);
+INSERT INTO CLIENTE VALUES (5,'30826606-0','Clarke','Clements','Morrison','Apdo.:838-7683 Facilisis. ','(293) 801-6722','02/03/1936','arcu@velit.org','1',2,3,1);
+INSERT INTO CLIENTE VALUES (6,'8916609-8','Yuli','Jennings','Jordan','4598 Cursus C/','(494) 184-9506','01/11/1935','nulla@nec.edu','1',3,1,7);
+INSERT INTO CLIENTE VALUES (7,'20448878-9','Rhoda','Singleton','Vasquez','Apartado núm.: 647, 4413 Erat Carretera','(578) 450-3470','07/04/1949','lectus.Nullam.suscipit@risusodioauctor.net','1',2,1,4);
+INSERT INTO CLIENTE VALUES (8,'45338869-7','Brynn','Kinney','Blair','3291 Nonummy Avenida','(378) 734-9779','10/02/1954','lacinia.at@magna.co.uk','0',2,2,1);
+INSERT INTO CLIENTE VALUES (9,'39835373-0','Keiko','Jacobs','Rodriguez','Apartado núm.: 875, 4619 Tincidunt Carretera','(294) 580-6300','14/06/1949','eu.metus@egestasFuscealiquet.co.uk','0',3,4,10);
+INSERT INTO CLIENTE VALUES (10,'9313506-7','Mannix','Benson','Ford','2593 At Av.','(962) 940-5408','13/06/1976','erat.vel.pede@nisinibh.ca','0',3,3,4);
+INSERT INTO CLIENTE VALUES (11,'32582092-6','Rebecca','Sheppard','Sutton','Apartado núm.: 183, 8066 Quisque C/','(625) 677-8904','20/06/1973','sit@fringilla.edu','0',1,4,6);
+INSERT INTO CLIENTE VALUES (12,'8585178-0','Porter','Hernandez','Decker','583-969 Nec C/','(135) 926-6893','01/01/1940','Cum.sociis@lorem.org','0',4,3,10);
+INSERT INTO CLIENTE VALUES (13,'31132981-2','Patience','Lang','Mullins','Apdo.:106-4663 Tincidunt, Ctra.','(512) 741-3206','28/08/1984','arcu.Nunc@penatibuset.org','0',4,2,5);
+INSERT INTO CLIENTE VALUES (14,'7499882-8','Nerea','Foley','Bird','159-4734 Eleifend Avda.','(733) 561-8333','24/11/1950','ligula.consectetuer.rhoncus@adipiscingnon.com','1',4,1,8);
+INSERT INTO CLIENTE VALUES (15,'21090457-3','Amelia','Mcknight','Stafford','589-4985 In C.','(767) 419-5360','12/10/1963','fermentum.risus@mattisornarelectus.ca','0',3,3,6);
+INSERT INTO CLIENTE VALUES (16,'50985555-2','Alexander','Bond','Owen','Apartado núm.: 464, 7498 Cursus, Calle','(335) 740-1895','10/02/1967','blandit@nonummyipsum.ca','0',2,3,5);
+INSERT INTO CLIENTE VALUES (17,'16629214-K','Rhea','Rich','David','Apartado núm.: 338, 2666 Rutrum Avenida','(240) 545-6848','27/04/1941','In@liberoduinec.net','1',3,4,6);
+INSERT INTO CLIENTE VALUES (18,'28305443-8','Hilel','Jarvis','Barry','425-8175 Blandit Av.','(120) 691-7077','06/06/1958','Maecenas.mi@ipsum.org','0',1,1,7);
+INSERT INTO CLIENTE VALUES (19,'24859015-7','Judah','Castillo','Miles','Apdo.:454-4100 Justo C/','(878) 133-2280','29/01/1936','elit@ligulatortordictum.co.uk','0',2,1,5);
+INSERT INTO CLIENTE VALUES (20,'33273781-3','Kelly','Brock','Graves','1045 Aliquam Avda.','(200) 175-5536','03/07/1945','Aenean@antedictum.ca','0',1,1,4);
+INSERT INTO CLIENTE VALUES (21,'41828383-1','Alfreda','Acosta','Becker','248-4974 Malesuada Carretera','(735) 817-8341','20/05/1971','enim@libero.edu','1',3,1,8);
+INSERT INTO CLIENTE VALUES (22,'19167490-1','Flavia','Hall','Delaney','Apdo.:847-7833 Consectetuer Avenida','(288) 194-6330','19/07/1966','ipsum@nullaDonecnon.ca','0',3,3,10);
+INSERT INTO CLIENTE VALUES (23,'37233203-4','Graiden','Mathews','Ferguson','826-6154 Nec Avda.','(349) 176-8711','20/04/1936','Integer.sem@odio.edu','0',2,4,10);
+INSERT INTO CLIENTE VALUES (24,'29911803-7','Jane','Oconnor','Hicks','8925 Mauris Calle','(882) 201-3514','06/10/1967','nec.ante.Maecenas@vulputate.org','1',4,3,8);
+INSERT INTO CLIENTE VALUES (25,'27041469-9','Amos','Ferguson','Barnett','154-5221 Sapien, Av.','(894) 177-1812','01/03/1947','libero.Morbi@faucibusorciluctus.com','0',2,2,8);
+INSERT INTO CLIENTE VALUES (26,'32123346-5','Maggy','Lyons','Joseph','Apartado núm.: 194, 8542 Penatibus Avenida','(898) 529-7212','02/10/1946','ante.Vivamus@magnis.net','1',1,3,6);
+INSERT INTO CLIENTE VALUES (27,'37946771-7','Christen','Cantu','Fuller','6013 Integer Calle','(184) 885-7895','01/02/1980','ridiculus@anteMaecenas.net','0',4,2,2);
+INSERT INTO CLIENTE VALUES (28,'32889371-1','Dennis','Roy','Terry','9130 Arcu. Av.','(790) 489-1084','24/12/1993','diam.lorem.auctor@elitelit.edu','1',2,3,8);
+INSERT INTO CLIENTE VALUES (29,'44604927-5','Yoko','Pate','Sellers','463 Ultricies Calle','(904) 464-8510','05/04/1946','tempus.scelerisque.lorem@atrisusNunc.com','1',3,4,2);
+INSERT INTO CLIENTE VALUES (30,'33497690-4','Fulton','Guerra','Farmer','107-2005 Nulla. Avda.','(787) 181-8194','10/12/1973','ridiculus@eget.org','0',2,2,5);
+INSERT INTO CLIENTE VALUES (31,'13985042-4','Aspen','Stein','Molina','Apdo.:244-673 Ornare Carretera','(458) 150-7146','15/09/1957','justo@Maurisvelturpis.co.uk','1',1,2,9);
+INSERT INTO CLIENTE VALUES (32,'43413054-9','Channing','Fox','Cotton','7625 Urna. Avda.','(276) 892-2053','09/05/1976','Vivamus.nibh.dolor@nisi.edu','0',2,3,5);
+INSERT INTO CLIENTE VALUES (33,'22545250-4','Ciaran','Colon','Cox','Apdo.:516-4984 Quisque Avda.','(947) 741-4890','21/06/1987','ac.turpis.egestas@necenim.ca','1',4,1,8);
+INSERT INTO CLIENTE VALUES (34,'9533243-9','Lawrence','Curry','Gonzalez','Apdo.:585-7748 Mollis ','(557) 218-2207','31/03/1968','eu.ligula.Aenean@Proinultrices.org','0',1,3,5);
+INSERT INTO CLIENTE VALUES (35,'43902704-5','Alma','Powell','Potter','922-3681 A, Avenida','(333) 862-8559','19/01/1947','Aenean.gravida@ut.com','1',3,1,9);
+INSERT INTO CLIENTE VALUES (36,'44947605-0','Donovan','Goff','Bush','Apartado núm.: 527, 3230 Curabitur Avda.','(832) 470-2774','13/05/1983','egestas@nectempus.edu','1',3,2,2);
+INSERT INTO CLIENTE VALUES (37,'40719941-3','Brendan','Davidson','Carey','2390 Nibh Av.','(780) 952-2816','01/03/1986','enim.gravida.sit@facilisisfacilisis.com','1',2,1,10);
+INSERT INTO CLIENTE VALUES (38,'15393208-5','Sopoline','Carr','Douglas','701-3999 Tincidunt C/','(472) 741-4767','15/11/1977','aliquam.iaculis.lacus@vitae.co.uk','0',4,1,3);
+INSERT INTO CLIENTE VALUES (39,'40895805-9','Kylie','Underwood','Cruz','759-4557 Blandit ','(408) 772-5970','04/04/2001','Nulla.dignissim@veliteu.edu','1',1,4,6);
+INSERT INTO CLIENTE VALUES (40,'22815258-7','Ian','Park','Macias','447-5420 Ornare C/','(345) 388-8792','11/05/1971','neque.pellentesque@seddolor.net','0',4,1,6);
+INSERT INTO CLIENTE VALUES (41,'11580750-1','Melvin','Simmons','Stevens','Apartado núm.: 793, 5227 Sed Ctra.','(112) 666-6604','25/04/2001','arcu.et@Crasegetnisi.com','1',3,2,8);
+INSERT INTO CLIENTE VALUES (42,'50456321-9','Ishmael','Vance','Page','Apdo.:716-2448 Suspendisse Ctra.','(663) 126-7318','05/04/1937','placerat.augue.Sed@sitamet.net','0',4,1,1);
+INSERT INTO CLIENTE VALUES (43,'31115304-8','Norman','Mack','Jackson','Apartado núm.: 405, 6918 Eleifend Av.','(601) 436-5632','02/07/1961','augue.eu@rhoncus.ca','1',2,1,6);
+INSERT INTO CLIENTE VALUES (44,'33691927-4','Stone','Hinton','Hendrix','7739 Sollicitudin Calle','(917) 822-2491','01/08/1983','varius.orci.in@aliquetmagna.edu','0',4,3,10);
+INSERT INTO CLIENTE VALUES (45,'45178966-K','Boris','Trevino','Lester','Apartado núm.: 592, 5911 Phasellus C.','(477) 959-7654','19/01/1991','nec@erat.ca','1',3,1,8);
+INSERT INTO CLIENTE VALUES (46,'38756302-4','Rigel','Williams','Barrett','8636 Purus Avda.','(818) 296-9894','09/12/1968','mauris.id@euismod.net','1',4,2,10);
+INSERT INTO CLIENTE VALUES (47,'43436606-2','Sopoline','Ford','Lambert','Apdo.:705-5120 Integer Calle','(176) 693-7554','31/03/1942','per@Morbivehicula.net','1',4,4,10);
+INSERT INTO CLIENTE VALUES (48,'25937647-5','Wilma','Nash','Leonard','4880 Orci Carretera','(394) 101-9855','10/01/1988','a.neque@conubianostra.co.uk','0',2,3,6);
+INSERT INTO CLIENTE VALUES (49,'43279017-7','Audra','Holcomb','Browning','Apartado núm.: 504, 221 Nunc Ctra.','(206) 148-9678','16/03/1978','gravida.Praesent@non.com','0',1,4,9);
+INSERT INTO CLIENTE VALUES (50,'37365847-2','Brianna','Shepard','Puckett','Apartado núm.: 830, 7639 Consectetuer, C/','(480) 415-4078','28/08/1937','Cum@aliquetodioEtiam.com','0',3,4,6);
+INSERT INTO CLIENTE VALUES (51,'18993029-1','Leah','Wong','Charles','Apartado núm.: 775, 9380 Diam. Avenida','(333) 647-8834','19/09/1984','eleifend.vitae.erat@etnetuset.com','1',3,2,7);
+INSERT INTO CLIENTE VALUES (52,'50166186-4','Benedict','Hughes','Irwin','Apartado núm.: 218, 683 Gravida Av.','(299) 882-5205','08/01/1942','at@interdum.net','0',3,1,4);
+INSERT INTO CLIENTE VALUES (53,'33590126-6','Jelani','Watkins','Beck','273-9292 Pulvinar Avenida','(813) 515-9335','08/10/1953','Nullam.nisl.Maecenas@laoreetliberoet.org','1',1,2,10);
+INSERT INTO CLIENTE VALUES (54,'34597532-2','Katelyn','Nash','Hendrix','6160 Ligula. ','(297) 139-7916','20/11/1958','lorem.vitae@quama.org','1',4,1,10);
+INSERT INTO CLIENTE VALUES (55,'49083170-3','Galena','Bright','Roman','750 Justo. Calle','(411) 569-7093','07/08/1948','Nulla.facilisis.Suspendisse@vitaesodalesat.org','1',1,3,3);
+INSERT INTO CLIENTE VALUES (56,'30725774-2','Francesca','Davidson','Osborn','Apdo.:988-4992 Sed C/','(644) 904-7115','09/11/1939','ultricies.ornare.elit@auctor.edu','0',1,3,10);
+INSERT INTO CLIENTE VALUES (57,'12835405-0','Julian','Chang','Noel','410-6636 Ultricies C/','(733) 555-7560','02/09/2000','bibendum.ullamcorper.Duis@Donecporttitor.net','0',1,1,5);
+INSERT INTO CLIENTE VALUES (58,'13548847-K','Hiroko','Church','Morrison','785-7651 Ac ','(775) 224-2291','04/11/1986','purus@tristique.com','0',2,4,1);
+INSERT INTO CLIENTE VALUES (59,'6982753-5','Tyler','Bernard','Schultz','6343 Luctus ','(283) 222-3201','06/10/1978','orci.sem@turpisegestas.com','1',2,4,3);
+INSERT INTO CLIENTE VALUES (60,'17799354-9','Nasim','Moody','Kerr','Apdo.:911-3975 Rutrum ','(438) 794-2099','21/02/1961','imperdiet.erat.nonummy@Proindolor.com','0',4,4,8);
+INSERT INTO CLIENTE VALUES (61,'20439898-4','Jasmine','Cardenas','Levy','Apartado núm.: 823, 1788 Luctus C.','(536) 583-9835','06/06/1941','dictum.placerat.augue@sagittisNullamvitae.com','1',4,2,2);
+INSERT INTO CLIENTE VALUES (62,'45124298-9','Tatum','Lambert','Boyer','814-227 Amet Calle','(961) 573-3083','24/08/1960','lacus.vestibulum@estmaurisrhoncus.org','1',4,1,9);
+INSERT INTO CLIENTE VALUES (63,'13260569-6','Judah','Holden','Duke','Apartado núm.: 926, 8058 In, Avenida','(446) 615-4480','05/08/1987','id.sapien@magna.net','0',1,2,3);
+INSERT INTO CLIENTE VALUES (64,'20534354-7','Blaine','Chan','Flowers','1468 Est, C.','(720) 790-3816','11/06/1961','Nunc.ut.erat@Incondimentum.com','0',4,2,1);
+INSERT INTO CLIENTE VALUES (65,'25272962-3','Sydnee','Allison','Glover','912-5082 Massa. ','(231) 847-6497','05/10/1936','eget.dictum.placerat@diamProin.edu','0',2,1,5);
+INSERT INTO CLIENTE VALUES (66,'48601722-8','Wyatt','Weaver','Weeks','Apdo.:128-518 Nascetur Avda.','(532) 977-4338','29/03/1946','Vivamus.nisi.Mauris@convallis.net','0',3,2,4);
+INSERT INTO CLIENTE VALUES (67,'39250418-4','Juliet','Lowery','Norris','5690 Amet Carretera','(319) 186-5162','31/01/1961','mauris.aliquam@nisisem.net','0',3,2,4);
+INSERT INTO CLIENTE VALUES (68,'18789213-9','Keaton','Estrada','Atkins','Apdo.:653-7460 Turpis. C.','(419) 874-1552','20/10/1980','diam.Duis.mi@semmollisdui.org','0',2,2,5);
+INSERT INTO CLIENTE VALUES (69,'20590771-8','Amery','Lester','Foster','Apartado núm.: 869, 5966 Luctus, Av.','(166) 917-7319','01/09/1962','arcu@conubianostraper.com','0',3,1,4);
+INSERT INTO CLIENTE VALUES (70,'20819757-6','Joy','Dorsey','Mcmahon','5029 Ipsum Calle','(699) 878-3172','17/11/1983','dolor.sit@Pellentesquetincidunttempus.edu','1',3,3,7);
+INSERT INTO CLIENTE VALUES (71,'48653396-K','Rhiannon','Bradford','Hays','760-5233 Eget Calle','(776) 475-1113','24/12/1940','at@velmaurisInteger.ca','1',4,1,5);
+INSERT INTO CLIENTE VALUES (72,'33602587-7','Madison','Norman','Harding','Apartado núm.: 519, 7336 Justo Avenida','(141) 750-3496','28/02/1937','mauris.Morbi.non@loremeget.com','0',1,2,1);
+INSERT INTO CLIENTE VALUES (73,'43697708-5','Lars','Carlson','Peters','6432 Est. Carretera','(257) 918-5912','10/09/1959','lacus@urnaUttincidunt.co.uk','1',2,1,6);
+INSERT INTO CLIENTE VALUES (74,'11006802-6','Desiree','Martinez','Jarvis','2201 A, Avenida','(172) 131-0126','27/07/1999','at.nisi.Cum@risus.co.uk','1',4,1,8);
+INSERT INTO CLIENTE VALUES (75,'43048434-6','Christine','Huber','Decker','5883 Duis C/','(707) 712-5195','07/04/1941','auctor@hendrerita.net','0',2,4,4);
+INSERT INTO CLIENTE VALUES (76,'32416486-3','Alice','Frost','Nunez','9316 Phasellus Calle','(151) 400-3785','17/03/1959','cursus.luctus.ipsum@viverraMaecenas.org','1',3,1,10);
+INSERT INTO CLIENTE VALUES (77,'27152024-7','Yeo','Contreras','Hood','238-2558 Porttitor Avenida','(156) 483-6885','10/09/1969','Donec@a.org','0',2,2,7);
+INSERT INTO CLIENTE VALUES (78,'24346402-1','Xandra','Juarez','Calderon','186-844 Auctor Av.','(614) 731-2010','02/01/1979','urna@iaculis.co.uk','0',1,2,10);
+INSERT INTO CLIENTE VALUES (79,'31580946-0','Pearl','Kane','Wilder','6818 Egestas. Calle','(139) 511-8115','20/08/1990','ante.Nunc@afelisullamcorper.net','1',4,4,1);
+INSERT INTO CLIENTE VALUES (80,'22125094-K','Shannon','Mccoy','Gill','184 Nibh C.','(660) 747-4618','21/06/1987','luctus.ut.pellentesque@eu.co.uk','1',2,4,6);
+INSERT INTO CLIENTE VALUES (81,'8571319-1','Colleen','Jensen','Brady','Apdo.:687-7523 Lectus, Av.','(559) 531-6294','26/10/1955','dapibus.id.blandit@erat.edu','1',2,4,7);
+INSERT INTO CLIENTE VALUES (82,'14631170-9','Holmes','Conley','Sloan','913-1711 Sit Calle','(459) 930-9387','05/05/1937','et@ornarelectus.co.uk','0',1,4,4);
+INSERT INTO CLIENTE VALUES (83,'25963056-8','Hop','Serrano','Dominguez','175-8147 Aliquam Ctra.','(331) 601-6447','25/10/1990','morbi@Integervulputate.ca','1',2,4,7);
+INSERT INTO CLIENTE VALUES (84,'25715882-9','Melvin','Carlson','Ramsey','Apdo.:862-801 Etiam Avenida','(624) 505-0398','29/09/1941','vestibulum@augue.co.uk','1',4,4,5);
+INSERT INTO CLIENTE VALUES (85,'40639234-1','Mark','Slater','Woodward','4889 Convallis Carretera','(872) 636-8959','14/10/1986','tempus@dolorsitamet.org','0',4,4,6);
+INSERT INTO CLIENTE VALUES (86,'18298739-5','Vladimir','Gilliam','Spears','Apdo.:822-6299 Dolor. Avenida','(841) 943-2992','08/10/1990','cursus.non@et.ca','1',3,4,2);
+INSERT INTO CLIENTE VALUES (87,'13011364-8','Adrian','Burgess','Callahan','Apartado núm.: 605, 6786 Consequat, Ctra.','(480) 806-2478','29/02/1968','Nunc.laoreet.lectus@Aliquam.org','1',4,4,2);
+INSERT INTO CLIENTE VALUES (88,'21149489-1','Xandra','Norris','Key','142-2518 Montes, Avenida','(679) 184-7745','01/10/1947','ligula.Aliquam@Aeneanmassa.net','0',2,2,8);
+INSERT INTO CLIENTE VALUES (89,'15852212-8','Victoria','Stein','Reid','2259 Quisque Avda.','(907) 167-5726','24/01/1951','gravida.nunc.sed@aliquam.net','1',1,4,5);
+INSERT INTO CLIENTE VALUES (90,'14973262-4','Tarik','Weber','Haynes','Apdo.:744-1504 Blandit Calle','(207) 756-1213','27/07/1984','sodales.Mauris.blandit@nequevenenatislacus.ca','1',1,3,9);
+INSERT INTO CLIENTE VALUES (91,'41085622-0','Devin','Schmidt','Cooper','754-2498 Gravida Calle','(724) 477-4219','20/10/1935','porttitor@velitegetlaoreet.org','1',2,1,1);
+INSERT INTO CLIENTE VALUES (92,'20667294-3','Barry','Wells','Frazier','6311 Donec Avenida','(650) 791-2742','19/08/1961','aliquet.sem@ametrisus.edu','1',4,2,2);
+INSERT INTO CLIENTE VALUES (93,'38915306-0','Alvin','Yang','Luna','295-1149 Venenatis Ctra.','(113) 651-1035','18/01/1937','ullamcorper.Duis.cursus@acfermentumvel.org','1',3,3,8);
+INSERT INTO CLIENTE VALUES (94,'32609369-6','Burke','Wilder','Hernandez','Apdo.:465-6974 Eu Avenida','(502) 892-5888','29/12/1984','aliquet@convallisin.org','0',3,2,4);
+INSERT INTO CLIENTE VALUES (95,'13088789-9','Ezra','Wilkerson','Farley','7547 Non, Ctra.','(316) 963-1778','26/12/2002','vitae.mauris.sit@eget.net','1',2,3,8);
+INSERT INTO CLIENTE VALUES (96,'23773614-1','Sasha','Holcomb','Wolfe','8171 Feugiat Ctra.','(853) 913-5204','22/09/1992','nascetur.ridiculus@diamloremauctor.net','1',1,1,5);
+INSERT INTO CLIENTE VALUES (97,'15124710-5','Venus','Joyner','Talley','Apdo.:104-9824 Nibh C.','(779) 998-0726','21/10/1994','ut@sollicitudina.net','0',1,3,6);
+INSERT INTO CLIENTE VALUES (98,'16088475-4','Rebecca','Hooper','Hurley','1430 Velit Avda.','(755) 579-9462','12/10/1987','Mauris.eu@ut.org','1',1,4,5);
+INSERT INTO CLIENTE VALUES (99,'45872130-0','Mark','Hinton','Mclaughlin','4509 Libero. Calle','(295) 148-9353','22/05/1976','pede@non.org','1',1,3,10);
+INSERT INTO CLIENTE VALUES (100,'21004549-K','Aaron','Nielsen','Carlson','890-3337 Lacus Ctra.','(779) 865-3850','16/12/1951','Aliquam.adipiscing@tristique.org','0',3,4,6);
