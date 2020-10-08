@@ -189,3 +189,13 @@ BEGIN
   COMMIT; -- PARA GUARDAR CAMBIOS
   P_ID := V_ID_SALIDA; -- 0 o el id que se encontró
 END SP_ELIMINAR_DEPARTAMENTO;
+
+---------------------------------------------
+-- Función listar departamentos
+---------------------------------------------
+
+CREATE OR REPLACE FUNCTION FN_LISTAR_DEPARTAMENTO RETURN SYS_REFCURSOR IS
+  CUR_LISTAR_DEPARTAMENTO SYS_REFCURSOR;
+BEGIN OPEN CUR_LISTAR_DEPARTAMENTO FOR SELECT * FROM DEPARTAMENTO;
+  RETURN CUR_LISTAR_DEPARTAMENTO; -- no se cierran para poder ocuparlos en c#
+END;
