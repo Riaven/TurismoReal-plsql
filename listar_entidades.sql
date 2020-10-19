@@ -164,7 +164,7 @@ BEGIN OPEN CUR_LISTAR_RESERVA_DEPARTAMENTO FOR SELECT * FROM RESERVA_DEPARTAMENT
 END;
 
 ---------------------------------------------
--- Función listar servicios extra
+-- Función listar servicios depa
 ---------------------------------------------
 
 CREATE OR REPLACE FUNCTION FN_LISTAR_SERVICIO_DEPARTAMENTO RETURN SYS_REFCURSOR IS
