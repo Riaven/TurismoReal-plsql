@@ -4,6 +4,7 @@
 CREATE OR REPLACE PROCEDURE SP_CREAR_CLIENTE 
 ( 
  P_RUT IN VARCHAR2,
+ P_DV IN VARCHAR2,
  P_NOMBRE IN VARCHAR2,
  P_APATERNO IN VARCHAR2,
  P_AMATERNO IN VARCHAR2,
@@ -19,6 +20,7 @@ P_ID_NACIONALIDAD IN NUMBER,
 BEGIN
   INSERT INTO CLIENTE VALUES (CLIENTE_ID_SEQ.NEXTVAL,
                                 P_RUT ,
+                                P_DV,
                                 P_NOMBRE ,
                                 P_APATERNO ,
                                 P_AMATERNO ,
@@ -58,6 +60,7 @@ END SP_ELIMINAR_CLIENTE;
 ---------------------------------------------
 CREATE OR REPLACE PROCEDURE SP_MODIFICAR_CLIENTE 
   (P_ID IN NUMBER,
+ P_DV IN VARCHAR2,
  P_RUT IN VARCHAR2,
  P_NOMBRE IN VARCHAR2,
  P_APATERNO IN VARCHAR2,
@@ -75,6 +78,7 @@ BEGIN
   UPDATE CLIENTE
   SET  
       RUT = P_RUT ,
+      DV_RUN = P_DV,
       NOMBRE = P_NOMBRE ,
       APATERNO = P_APATERNO ,
       AMATERNO = P_AMATERNO ,

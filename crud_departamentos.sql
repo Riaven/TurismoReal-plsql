@@ -23,7 +23,7 @@ BEGIN
                                    P_BANIOS ,
                                    P_DESC_DEPA ,
                                    P_CANTI_HABI ,
-                                   1,
+                                  -- 1,
                                    P_ID_ESTADO_DEPA ,
                                    P_ID_EMPLEADO ,
                                    P_ID_COMUNA 
